@@ -47,7 +47,14 @@
 		<true/>
 		<key>UIApplicationSupportsIndirectInputEvents</key>
 		<true/>
-		<!-- TODO: Agrega permiso: NSLocationWhenInUseUsageDescription -->
-		<!-- TODO: Agrega permiso: NSLocationAlwaysUsageDescription -->
+		<!-- TODO Agrega permiso: NSLocationWhenInUseUsageDescription -->
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>This app requires use location while in use</string>
+
+		<!-- TODO Agrega permiso: NSLocationAlwaysUsageDescription -->
+		<key>NSLocationAlwaysUsageDescription</key>
+		<string>This app requires use location while in background</string>
+
+
 	</dict>
 </plist>
