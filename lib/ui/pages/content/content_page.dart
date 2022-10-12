@@ -42,7 +42,7 @@ class ContentPage extends GetView<LocationController> {
                                     timestamp: DateTime.now()),
                                 // TODO: 4. con el [controller] guarda ese objeto [saveLocation]
                                 controller.saveLocation(location: data),
-                                print(controller.locations),
+                                //print(controller.locations),
                               },
                             ),
                           },
