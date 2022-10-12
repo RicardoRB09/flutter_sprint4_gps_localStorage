@@ -16,6 +16,8 @@ class LocationController extends GetxController {
   }) async {
     /* TODO: Usa [LocationManager] para guardar [save] la ubicacion [location] */
     LocationManager.save(location: location);
+    LocationManager.readData(location.uuid)
+        .then((value) => print(value.latitude));
   }
 
   Future<List<TrackedLocation>> getAll({

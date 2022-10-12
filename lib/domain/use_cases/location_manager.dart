@@ -15,6 +15,10 @@ abstract class LocationManager {
     await _repository.insert(box: _repository.box, data: location);
   }
 
+  static Future<TrackedLocation> readData(uuid) async {
+    return await _repository.read(box: _repository.box, uuid: uuid);
+  }
+
   static Future<List<TrackedLocation>> getAll() async {
     return await _repository.readRecords(box: _repository.box);
   }
