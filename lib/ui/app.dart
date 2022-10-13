@@ -9,9 +9,13 @@ class GpsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'GPS Tracker',
+      debugShowCheckedModeBanner: false,
+      title: 'MinTic GPS Tracker',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          color: Color.fromRGBO(30, 38, 73, 1),
+        ),
+        scaffoldBackgroundColor: Colors.white,
       ),
       home: const PermissionPage(),
     );
